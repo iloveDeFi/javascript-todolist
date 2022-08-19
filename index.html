@@ -9,29 +9,32 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="icon" href="/Todo.png" type="image/x-icon">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
+<script src="app.js" defer></script>
 <title>To Do List</title>
 </head>
+
 <body>
     <header>
-       Liste des tâches à réaliser
-
-    </header>
+        👨‍💻 Liste des tâches pour aujourd'hui !
+     </header>
 
    <div class="container">
         <div id="newtask">  
-            <input id="myInput" type="text" placeholder="Tâche à réaliser..">
-            <button id="push" onclick="">Ajouter</button>
+            <input id="myInput" type="text" placeholder=" ✍️ Tâche à réaliser..">
+            <button id="push" onclick="" >✛ Ajouter</button>
         </div>
+        
         <div id="tasks"></div>
 
-        
+        <div class="suppr">
+            <button class="deleteAll">Supprimer toutes les tâches</button>
+        </div>
+ 
    </div>
     
 
-    <script src="app.js"></script>
+    </script>
+
 
 </body>
 </html>

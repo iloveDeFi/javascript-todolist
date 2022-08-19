@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #2806ea, #24235b);
+  background-image: linear-gradient(120deg, #3e3e3e, #000000);
   color: white;
   font-family: "Caveat", sans-serif;
   min-height: 100vh;
@@ -92,7 +92,7 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid rgb(208, 208, 208);
-  cursor: pointer;
+  cursor: move;
 }
 
 .task span{
@@ -112,6 +112,20 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
+
+
+
+#edit {
+  height: 100%;
+  width: 40px;
+  color: white;
+  background: linear-gradient(120deg, #1906ea, #28235b);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
 .completed{
   text-decoration: line-through;
 }
@@ -122,3 +136,42 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   height: 24px !important;
 }
 
+.fa-regular fa-pen-to-square {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+
+.deleteAll{
+
+  width: 60%;
+  height: 40px;
+  margin-left: 120px;
+  margin-top: 60px;
+  color: white;
+  background: linear-gradient(120deg, #ea0606, #5b2328);
+  cursor: pointer;
+  border: white solid 0.1px;
+  border-radius: 5px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+ 
+.deleteAll:hover {
+  transform: scale(0.9);
+  transition: 0.8s; 
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#push:hover{
+  transform: scale(0.9);
+  transition: 0.8s; 
+}
